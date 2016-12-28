@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 @Component({
-  selector: 'menu',
+  selector: 'main-menu',
   template: `
     <home *ngIf="currentPage === 'Home'"></home>
     <fall *ngIf="currentPage === 'Fall Bike Event'"></fall>
@@ -37,7 +37,7 @@ import {Component} from "@angular/core";
     }
   `]
 })
-export class Menu {
+export class MainMenu {
 
   currentPage = 'Home';
 
