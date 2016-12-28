@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {MenuModule} from "../menu/menu.module";
-import {PagesModule} from "../pages/pages.module";
+import { MenuModule } from "../menu/menu.module";
+import { PagesModule } from "../pages/pages.module";
 
 @NgModule({
   declarations: [
