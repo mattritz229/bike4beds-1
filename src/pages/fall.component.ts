@@ -2,7 +2,9 @@ import {Component} from "@angular/core";
 @Component({
   selector: 'fall',
   template: `
-    <h2>Fall Bike Ride</h2>
+    <div class="background-color">
+      <h2>Fall Bike Ride</h2>
+    </div>
   `
 })
 export class Fall{}
