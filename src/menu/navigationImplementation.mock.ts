@@ -69,17 +69,16 @@ var getHomePages = function(){
 };
 var getFallRidePages = function(){
   return { title: "Fall Bike Ride", type: PAGETYPES.CARDS, hasSubpages: true, isRoot: true,
-    icons: createRootIcon("fa-bicycle fa-2x", "Fall"), subpages: {
-      CAUSEINFO: createBasicMarkdownPage("Cause Info"),
-      EVENTINFO: createBasicMarkdownPage("Event Info"),
-      SIGNUPINFO: createMarkdownPageWithSubPages("Sign Up Info", {
-        SIGNUPFORM: createFormPage("Sign Up Form")
-      })
+    icons: createRootIcon("fa-bicycle fa-2x", " Fall"), subpages: {
+      BIKEFORM: createFormPage("Bike Form"),
+      VOLUNTEERFORM: createFormPage("Volunteer Form"),
+      SPONSORFORM: createFormPage("Sponsor Form"),
+      DONATEFORM: createFormPage("Donate From")
     }};
 };
 var getSpringRidePages = function(){
   return {title: "Spring Bike Ride", type: PAGETYPES.CARDS, hasSubpages: true, isRoot: true,
-    icons: createRootIcon("fa-bicycle fa-2x", "Spring"), subpages: {
+    icons: createRootIcon("fa-bicycle fa-2x", " Spring"), subpages: {
       CAUSEINFO: createBasicMarkdownPage("Cause Info"),
       EVENTINFO: createBasicMarkdownPage("Event Info"),
       SIGNUPINFO: createMarkdownPageWithSubPages("Sign Up Info", {
@@ -134,9 +133,10 @@ var getAboutUsPages = function(){
 var addPageData = function(pages){
   console.log("adding page data",pages);
   pages = addAboutUsPageData(pages);
+  pages = addAboutUsTheTeamPageData(pages);
   console.log("done editing", pages);
   return pages;
-}
+};
 var addAboutUsPageData = function(pages){
   console.log("adding about us page data", pages);
   pages.ABOUTUS.subpages.OURGOAL.iconStyles = 'fa-bullseye';
@@ -156,7 +156,21 @@ var addAboutUsPageData = function(pages){
   pages.ABOUTUS.subpages.CONTACTUS.iconStyles = 'fa-id-card';
   pages.ABOUTUS.subpages.CONTACTUS.sentence = "";
   return pages
-}
+};
+var addAboutUsTheTeamPageData = function(pages){
+  pages.ABOUTUS.subpages.THETEAM.subpages.AKOUAENOW.sentence = "Chief Operating Officer";
+  pages.ABOUTUS.subpages.THETEAM.subpages.ALARICECESAREOLONERGAN.sentence = "Chief Marketing Officer";
+  pages.ABOUTUS.subpages.THETEAM.subpages.JESSICARITZ.sentence = "Chief Content Officer";
+  pages.ABOUTUS.subpages.THETEAM.subpages.JOEKURIGER.sentence = "Volunteer";
+  pages.ABOUTUS.subpages.THETEAM.subpages.KOMLANLONERGAN.sentence = "Chief Program Officer";
+  pages.ABOUTUS.subpages.THETEAM.subpages.LEWISRITZ.sentence = "Chief Technical Officer";
+  pages.ABOUTUS.subpages.THETEAM.subpages.BOBOCONNOR.sentence = "Board Member";
+  pages.ABOUTUS.subpages.THETEAM.subpages.DONLONERGAN.sentence = "Board Member";
+  pages.ABOUTUS.subpages.THETEAM.subpages.JAYBOYLE.sentence = "Board Member";
+  pages.ABOUTUS.subpages.THETEAM.subpages.MATTRITZ.sentence = "Chief Executive Officer & Board Chairman";
+
+  return pages;
+};
 
 // aboutUsData = {
 //   OurGoal: { title: 'Our Goal', iconStyles: 'fa-bullseye', sentence: "Each year we donate 100% of the money we raise to that year's cause." },

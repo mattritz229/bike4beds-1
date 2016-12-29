@@ -17,6 +17,7 @@ import {Component} from "@angular/core";
       <p>Bike4Beds is able to make a positive impact thanks to the generosity of our donors, enthusiasm from our bike riders, and selfless assistance from our volunteers.</p>
       <p>We are deeply grateful to everyone who has helped us in the previous years in our efforts to assist the Cavaillon Orphanage, the Dispensaire de Hiheatro in Hiheatro, Togo and the Maluti Hospital in the Kingdom of Lesotho.</p>
       <p>Register to bike, sign up to volunteer, sponsor a biker, or simply like us on Facebook and help us continue to support schools and hospitals, and dispensaries in communities across the world.</p>
+      
     </div>
   `,
   styles: [`

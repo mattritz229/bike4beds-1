@@ -4,7 +4,8 @@ import { PAGES } from "../menu/navigationImplementation.mock"
 @Component({
   selector: 'app-root',
   template: `
-    <header-nav [title]="currentPage.title" (navReturn)="changeCurrentLocation_goUp()"></header-nav>
+    <header-nav [title]="currentPage.title" [hideBackArrow]="currentPage.isRoot"
+      (navReturn)="changeCurrentLocation_goUp()"></header-nav>
     <all-pages [currentPage]="currentPage" [pageData]="pageData" 
       (goDeeper)="changeCurrentLocation_goDeeper($event.value)"></all-pages>
     <main-menu [items]="mainMenuItems" (changeMainMenu)="eventEmitedFromMainMenu($event)"></main-menu>
@@ -79,7 +80,7 @@ export class AppComponent {
     }
   }
   mainMenuItems = this.getMainPages(PAGES);
-  currentPage:any = PAGES.ABOUTUS;
+  currentPage:any = PAGES.HOMEPAGE;
 
   // ngAfterViewInit(){
   //   this.logState("start");

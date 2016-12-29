@@ -17,6 +17,9 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
       /*border: 1px solid red;*/
       padding: 5px 13px;
     }
+    .list-item:hover {
+      color: #8b0000;
+    }
     .list-item i, h2 {
       display: inline-block;
       line-height: 30px;

@@ -4,8 +4,10 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
   template: `
     <div class="header-buffer"></div>
     <div class="header-main">
-        <div class="backIcon" ngShow="showBackIcon" (click)="returnPageNav()">
-          <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        <div [hidden]="hideBackArrow">
+          <div class="backIcon" (click)="returnPageNav()">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+          </div>
         </div>
         <div class="extra-page-options">
           <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -78,13 +80,12 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
 export class HeaderNav {
 
   @Input() title;
+  @Input() hideBackArrow;
 
   @Output() navReturn = new EventEmitter();
 
   returnPageNav(){
     this.navReturn.emit();
   }
-
-  showBackIcon = true;
   pageTitle = "The Page Title";
 }
