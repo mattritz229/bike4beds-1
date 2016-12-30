@@ -14,8 +14,8 @@ import {Component, Output, EventEmitter} from "@angular/core";
       <ol>
         <li><h4>Choose Your Ride</h4> - Figure out how far you want to bike and the difficulty.</li>
         <li><h4>Transportation home</h4> - Pick an option for returning from the end location.</li>
-        <li><h4>Registration Form</h4> - Fill out the biker form for our records.</li>
-        <li><h4>Hotel</h4> - Be sure to make hote accomodations (if you are staying overnight).</li>
+        <li><h4>Registration Form</h4> - Fill out the biker form for our records (bottom of page).</li>
+        <li><h4>Hotel</h4> - Be sure to make hotel accomodations (if you are staying overnight).</li>
         <li><h4>Find Sponsors</h4> - Get your friends to sponsor you per mile (e.x. 10 cents a mile).</li>
         <li><h4>Directions</h4> - Make note of the starting locaiton and figure out how to get there on time.</li>
       </ol>
@@ -28,8 +28,8 @@ import {Component, Output, EventEmitter} from "@angular/core";
       <h2>Volunteers</h2>
       <ol>
         <li><h4>Transportation home</h4> - Pick an option for returning from the end location.</li>
-        <li><h4>Registration Form</h4> - Fill out the volunteer form.</li>
-        <li><h4>Hotel</h4> - Be sure to make hote accomodations (if you are staying overnight).</li>
+        <li><h4>Registration Form</h4> - Fill out the volunteer form  (bottom of page).</li>
+        <li><h4>Hotel</h4> - Be sure to make hotel accomodations (if you are staying overnight).</li>
         <li><h4>Directions</h4> - Make note of the starting locaiton and figure out how to get there on time.</li>
       </ol>
       <h2>Donating</h2>
